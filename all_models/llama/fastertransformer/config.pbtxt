@@ -223,7 +223,7 @@ parameters {
 parameters {
   key: "model_checkpoint_path"
   value: {
-    string_value: "/workspace/models/llama"
+    string_value: "/workspace/models/llama/1-gpu"
   }
 }
 parameters {
