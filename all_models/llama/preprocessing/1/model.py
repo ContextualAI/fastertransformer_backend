@@ -76,7 +76,7 @@ class TritonPythonModel:
         cur_folder = Path(__file__).parent
 
         from transformers import LlamaTokenizer
-        self.tokenizer = LlamaTokenizer.from_pretrained('/workspace/models/llama')
+        self.tokenizer = LlamaTokenizer.from_pretrained('/workspace/models/huggingface/llama-2-7b-chat-hf')
         # self.tokenizer = LlamaTokenizer.from_pretrained("decapoda-research/llama-7b-hf")
         self.start_id = self.tokenizer.eos_token_id
         self.end_id = self.tokenizer.bos_token_id
